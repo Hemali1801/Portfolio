@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d9cf60d5e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="containter">
+            <nav>
+            <!-- <img src="images/logonew.jpg" class="logo"> -->
+            <ul id="sidemenu">
+            <li> <a href="#header">Home</a></li>        
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fas" onClick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fas" onClick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-stack web development</p>
+                <h1>Hello, I'm <span>Hemali Raja</span><br>From Ahmedabad,Gujarat,India</h1>
+            </div>
+        </div>
+        <div class="mainimg">
+            <img src="images/mainimg.png" alt="" class="main-img"/>
+        </div>
+    </div>
+    </div>
+
+    <!-------------------------------------------------------- About Section ------------------------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/cvimg.jpg" alt="portfolio-pic" id="cvimg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello! I'm Hemali Raja, a passionate and dedicated full-stack web developer on an exciting journey to bring ideas to life in the digital world. My love for coding and problem-solving led me to embark on this adventure, and I've been hooked ever since.</p>
+                    <p>Driven by curiosity and a desire to learn, I am currently honing my skills through the MERN Stack Developer course by GRRAS Institue , where I've not only acquired theoretical knowledge but also translated it into practical, hands-on experience with several successful projects.</p>    
+                    <p>My approach to web development goes beyond just writing code; I thrive on creating seamless, user-friendly experiences. Whether it's designing the frontend to captivate users or architecting a robust backend, I enjoy the challenge of building scalable and efficient solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="openTab(event, 'Skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab(event, 'education')">Education</p>
+
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span><br>HTML, CSS, JavaScript </li>
+                            <li><span>Frontend:</span><br> React, Bootstrap </li>
+                            <li><span>Backend:</span><br> Node.js, Express.js</li>
+                            <li><span>Database:</span><br> MongoDB, MySQL</li>
+                            <li><span>APIs:</span><br> RESTful APIs, JSON</li>
+                            <li><span>Tools & Version Control:</span><br> Git, GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content " id="experience">
+                        <ul>
+                            <li><span>Internship Trainee</span><br>Grras Solution</li>
+                            <li><span>Software Support Engineer</span><br>Spine technologies</li>
+                            <li><span>Marketing and Administrator</span><br>Kaizen Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content " id="education">
+                        <ul>
+                            <li><span>2024-present</span><br>MERN Stack Develoepr | GRRAS Solution</li>
+                            <li><span>2016</span><br>BCA | Gujarat University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------- Services ------------------------------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Frontend web development</h2>
+                    <p>Crafting captivating and user-centric digital experiences is at the heart of my frontend development expertise. As a full-stack web developer with a strong foundation in frontend technologies, I specialize in bringing designs to life and ensuring seamless interactions for users.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Backend web development</h2>
+                    <p>In the digital landscape, a robust backend is the backbone of a seamless and efficient web application. As a seasoned full-stack web developer, I specialize in creating powerful and scalable backend solutions that lay the foundation for a high-performing and secure digital experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database management</h2>
+                    <p>A robust and well-optimized database is the cornerstone of a reliable and efficient web application. As a full-stack web developer, I specialize in crafting database solutions that ensure seamless data storage, retrieval, and management, contributing to the overall performance and reliability of your application.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-------------------------------------------------------- My work ------------------------------------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>To Do List App</h3>
+                    <a href="https://todo-list-gamma-mauve.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                    <a href="https://soundify-iota.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>PassX</h3>
+                        <a href="https://pass-x.vercel.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------------------------------------------------- Contact ------------------------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>hemaliraja1801@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9909000274</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Hemali1801" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hemaliraja/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/vibeswith.hr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Hemali-Resume.pdf" download class="btn btn2" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright  &copy; Hemali Raja</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyPm61FdfZu5mZ6WFGFBRjsN-urwax447yfNeLhO6jO_7xjXI1_v5YM2gDSToIuGOGEpw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
